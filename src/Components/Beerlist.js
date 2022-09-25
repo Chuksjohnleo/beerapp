@@ -8,7 +8,7 @@ import React from 'react'
            <img className='beers' src={beer.image_url} height='50' alt='m'/>
            <div className='abv' >ABV: {beer.abv}</div>
            <h3>{beer.tagline}</h3>
-           <h2>Food pairing : {beer.food_pairing[0].toUpperCase()}</h2>
+           <h6>Food pairing : {beer.food_pairing[0].toUpperCase()}</h6>
            <div className='des' >{beer.description}</div>
         </div>)
     })
