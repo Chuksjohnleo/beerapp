@@ -26,9 +26,11 @@ class App extends React.Component{n
       }
       return beer
     })
-    
-
-    
+    if(this.state.cards < 1){
+      return(
+        <h1>Loading your beers....</h1>
+      )
+    }
      return(
     <div>
         <div className='header' >
