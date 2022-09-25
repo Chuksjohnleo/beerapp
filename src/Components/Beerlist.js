@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Beerlist = ({beers}) =>{
+ const Beerlist = ({beers}) =>{
    return(
     beers.map (beer =>{
     return(<div className='App' key={beer.id} >
@@ -8,9 +8,10 @@ export const Beerlist = ({beers}) =>{
            <img className='beers' src={beer.image_url} height='50' alt='m'/>
            <div className='abv' >ABV: {beer.abv}</div>
            <h3>{beer.tagline}</h3>
-           <div>{beer.description}</div>
+           <h2>Food pairing : {beer.food_pairing[0].toUpperCase()}</h2>
+           <div className='des' >{beer.description}</div>
         </div>)
     })
    )
 }
- 
+export default Beerlist;

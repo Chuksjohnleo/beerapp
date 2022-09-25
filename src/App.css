@@ -4,8 +4,6 @@
   background-color: aquamarine;
   box-shadow: 3px 4px 7px black, -3px -4px 7px;
   transition: 1s;
-  height: 35vh;
-  overflow: hidden;
 }
 .abv{
   color: red;
@@ -40,5 +38,8 @@ h1{
 }
 h5{
   color: rgb(31, 39, 12);
+}
+.des{
+  font-size: 0.5rem;
 }
 

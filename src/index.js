@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './Beer';
-// import {inpute} from './Beerlist';
+import TheBeers from './Components/Beer';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-       <App/>
+       <TheBeers/>
   </React.StrictMode>
 );
 

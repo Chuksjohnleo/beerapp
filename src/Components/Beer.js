@@ -1,13 +1,13 @@
-import './App.css';
+import '../App.css';
 import React from 'react';
-import {Beerlist} from './Beerlist'
+import Beerlist from './Beerlist'
 
-class App extends React.Component{n
+class TheBeers extends React.Component{n
   constructor(){
     super()
     this.state={
       cards : [],
-      checkbox: ''
+      checkbox: false
     }
   }
   //api call from punkapi
@@ -21,7 +21,9 @@ class App extends React.Component{n
   render(){
     //switch to filter beers according to abv
     const requiredAbv =  this.state.cards.filter(beer=>{
-      if(beer.abv > 5 && this.state.checkbox === true){
+      if(beer.abv >= 5 && this.state.checkbox === true){
+        return false
+      }else if(beer.abv < 5.1 && this.state.checkbox === false){
         return false
       }
       return beer
@@ -46,7 +48,7 @@ class App extends React.Component{n
 }
 
 
-export default App;
+export default TheBeers;
 //   function App(){
 //   return(
 //   <div className='App' >
