@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import TheBeers from './Components/Beer';
+import App from './Components/App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-       <TheBeers/>
+       <App/>
+       <footer>
+        <p>Website by <a href='https://chuksjohnleo.github.io' className='homepage-link'>Chuksjohnleo</a></p>
+        <p>&copy; {new Date().getFullYear()} All rights reserved</p>
+       </footer>
   </React.StrictMode>
 );
 
